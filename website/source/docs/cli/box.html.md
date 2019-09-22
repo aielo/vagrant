@@ -33,7 +33,7 @@ one of three things:
 
 * A shorthand name from the
 [public catalog of available Vagrant images](https://vagrantcloud.com/boxes/search),
-such as "hashicorp/precise64".
+such as "hashicorp/bionic64".
 
 * File path or HTTP URL to a box in a [catalog](https://vagrantcloud.com/boxes/search).
 For HTTP, basic authentication is supported and `http_proxy` environmental
@@ -141,6 +141,8 @@ This command removes old versions of installed boxes. If the box is currently in
 * `--name NAME` - The specific box name to check for outdated versions.
 
 * `--force` - Destroy without confirmation even when box is in use.
+
+* `--keep-active-boxes` - When combined with `--force`, will keep boxes still actively in use.
 
 # Box Remove
 

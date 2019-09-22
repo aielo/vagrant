@@ -3,10 +3,19 @@
 FEATURES:
 
 - guest/alpine: Integrate the vagrant-alpine plugin into Vagrant core [GH-10975]
+- core/provisioners: Introduce new Provisioner options: before and after [GH-11043]
 
 IMPROVEMENTS:
 
+- guest/alt: Improve handling for using network tools when setting hostname [GH-11000]
+- command/box/prune: Allow prompt skip while preserving actively in use boxes [GH-10908]
+- guest/suse: Add ipv6 network config templates for SUSE based distributions [GH-11013]
+
 BUG FIXES:
+
+- provider/docker: Fix default provider validation if password is used [GH-11053]
+- provider/docker: Fix Docker providers usable? check [GH-11068]
+- core: Ensure proper paths are shown in config loading exceptions [GH-11056]
 
 ## 2.2.5 (June 19, 2019)
 
